@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shader_brilho",
+  "name":"shader_brilho",
+  "parent":{
+    "name":"shaders",
+    "path":"folders/Efeitos/shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

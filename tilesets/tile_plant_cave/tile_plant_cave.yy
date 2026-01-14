@@ -1,0 +1,47 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"tile_plant_cave",
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"chao_green cave","closed_edge":false,"name":"chao_green cave","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        46,52,51,33,29,61,55,57,30,32,60,58,54,36,35,38,45,120,98,123,24,95,96,101,47,99,121,102,68,118,117,
+        124,49,112,23,104,25,105,69,127,67,126,27,111,71,113,115,
+      ],},
+    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        178,184,183,165,161,193,187,189,162,164,192,190,186,168,167,170,177,252,230,255,156,227,228,233,179,
+        231,253,234,200,250,249,256,181,244,155,236,157,237,201,259,199,258,159,243,203,245,247,
+      ],},
+  ],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"tile_plant_cave",
+  "out_columns":17,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_tileset_plant_cave",
+    "path":"sprites/spr_tileset_plant_cave/spr_tileset_plant_cave.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":286,
+}

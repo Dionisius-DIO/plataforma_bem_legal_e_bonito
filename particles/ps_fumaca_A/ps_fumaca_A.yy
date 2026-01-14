@@ -1,0 +1,25 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"ps_fumaca_A",
+  "backdropHeight":16,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"C:\\Users\\diana\\OneDrive\\Área de Trabalho\\Plataforma bonitinho\\tocha.gif",
+  "backdropWidth":16,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"fumaça","additiveBlend":false,"directionIncrease":-0.1,"directionMax":100.0,"directionMin":75.0,"directionWiggle":0.0,"distribution":0,"editorColour":16777215,"editorDrawShape":true,"emitCount":-10,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":1,"emitIntervalMax":0.0,"emitIntervalMin":5.0,"emitIntervalUnits":1,"enabled":true,"endColour":1715843243,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":120.0,"lifetimeMin":60.0,"linkedEmitter":null,"locked":false,"midColour":2188762050,"mode":0,"name":"fumaça","orientationIncrease":0.0,"orientationMax":0.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":5.578762,"regionW":7.1089954,"regionX":-1.0,"regionY":-4.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":0.3,"scaleY":0.3,"shape":0,"sizeIncrease":-0.01,"sizeMax":1.0,"sizeMin":1.0,"sizeWiggle":0.2,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.01,"speedMax":0.0,"speedMin":0.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":{"name":"spr_fumaca","path":"sprites/spr_fumaca/spr_fumaca.yy",},"spriteRandom":false,"spriteStretch":true,"startColour":4290966993,"texture":-1,},
+  ],
+  "name":"ps_fumaca_A",
+  "parent":{
+    "name":"tochas",
+    "path":"folders/Particle Systems/tochas.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":true,
+  "xorigin":0,
+  "yorigin":0,
+}

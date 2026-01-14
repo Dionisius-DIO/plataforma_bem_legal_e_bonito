@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snt_pulo",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.37589583,
+  "exportDir":"",
+  "name":"snt_pulo",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"snt_pulo.wav",
+  "volume":1.0,
+}

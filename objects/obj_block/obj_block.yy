@@ -1,0 +1,51 @@
+{
+  "$GMObject":"",
+  "%Name":"obj_block",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+  "managed":true,
+  "name":"obj_block",
+  "overriddenProperties":[],
+  "parent":{
+    "name":"inside cave objects",
+    "path":"folders/Objects/inside cave objects.yy",
+  },
+  "parentObjectId":{
+    "name":"obj_wall_one_way",
+    "path":"objects/obj_wall_one_way/obj_wall_one_way.yy",
+  },
+  "persistent":false,
+  "physicsAngularDamping":0.1,
+  "physicsDensity":0.5,
+  "physicsFriction":0.2,
+  "physicsGroup":1,
+  "physicsKinematic":false,
+  "physicsLinearDamping":0.1,
+  "physicsObject":false,
+  "physicsRestitution":0.1,
+  "physicsSensor":false,
+  "physicsShape":1,
+  "physicsShapePoints":[],
+  "physicsStartAwake":true,
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"sprite","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_block_B","path":"sprites/spr_block_B/spr_block_B.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_block_B","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"estado_inicial","filters":[],"listItems":[
+        "\"estado_V\"",
+        "\"estado_I\"",
+      ],"multiselect":false,"name":"estado_inicial","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"estado_V\"","varType":6,},
+    {"$GMObjectProperty":"v2","%Name":"tempo","filters":[],"listItems":[],"multiselect":false,"name":"tempo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"60","varFriendlyName":"30","varType":1,},
+  ],
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":false,
+  "spriteId":{
+    "name":"spr_block_B",
+    "path":"sprites/spr_block_B/spr_block_B.yy",
+  },
+  "spriteMaskId":null,
+  "visible":true,
+}

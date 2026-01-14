@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snt_CARVENOUS_NONSENSE_UNDERGROUND",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":125.112976,
+  "exportDir":"",
+  "name":"snt_CARVENOUS_NONSENSE_UNDERGROUND",
+  "parent":{
+    "name":"soundtrack",
+    "path":"folders/Sounds/soundtrack.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"snt_CARVENOUS_NONSENSE_UNDERGROUND.mp3",
+  "volume":1.0,
+}

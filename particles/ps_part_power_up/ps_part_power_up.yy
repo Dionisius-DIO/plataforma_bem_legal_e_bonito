@@ -1,0 +1,25 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"ps_part_power_up",
+  "backdropHeight":16,
+  "backdropImageOpacity":0.33,
+  "backdropImagePath":"C:\\Users\\diana\\OneDrive\\Área de Trabalho\\Plataforma bonitinho\\power up.png",
+  "backdropWidth":16,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"Emitter","additiveBlend":false,"directionIncrease":0.0,"directionMax":100.0,"directionMin":80.0,"directionWiggle":60.0,"distribution":0,"editorColour":1090519039,"editorDrawShape":true,"emitCount":-10,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":1,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":1,"enabled":true,"endColour":2097939238,"GMPresetName":null,"gravityDirection":300.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":30.0,"lifetimeMin":15.0,"linkedEmitter":null,"locked":false,"midColour":3088450648,"mode":0,"name":"Emitter","orientationIncrease":0.0,"orientationMax":0.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":14.982658,"regionW":20.763,"regionX":0.0,"regionY":0.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":0.4,"scaleY":0.4,"shape":0,"sizeIncrease":0.0,"sizeMax":0.1,"sizeMin":0.1,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":0.9,"speedMin":0.5,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":4280225674,"texture":2,},
+  ],
+  "name":"ps_part_power_up",
+  "parent":{
+    "name":"Particle Systems",
+    "path":"folders/Particle Systems.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":true,
+  "xorigin":0,
+  "yorigin":0,
+}

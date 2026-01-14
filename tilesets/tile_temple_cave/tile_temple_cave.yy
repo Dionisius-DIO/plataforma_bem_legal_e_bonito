@@ -1,0 +1,43 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"tile_temple_cave",
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"brush","closed_edge":false,"name":"brush","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        46,52,51,33,29,61,55,57,30,32,60,58,54,36,35,38,45,120,98,123,24,95,96,101,47,99,121,124,68,118,117,
+        102,49,112,23,104,25,105,69,127,67,126,27,111,71,113,115,
+      ],},
+  ],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"tile_temple_cave",
+  "out_columns":17,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_tileset_temple_cave",
+    "path":"sprites/spr_tileset_temple_cave/spr_tileset_temple_cave.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":286,
+}

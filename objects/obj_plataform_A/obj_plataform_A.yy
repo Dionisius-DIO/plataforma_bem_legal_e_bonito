@@ -1,0 +1,45 @@
+{
+  "$GMObject":"",
+  "%Name":"obj_plataform_A",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
+  "managed":true,
+  "name":"obj_plataform_A",
+  "overriddenProperties":[],
+  "parent":{
+    "name":"inside cave objects",
+    "path":"folders/Objects/inside cave objects.yy",
+  },
+  "parentObjectId":{
+    "name":"obj_wall_one_way",
+    "path":"objects/obj_wall_one_way/obj_wall_one_way.yy",
+  },
+  "persistent":false,
+  "physicsAngularDamping":0.1,
+  "physicsDensity":0.5,
+  "physicsFriction":0.2,
+  "physicsGroup":1,
+  "physicsKinematic":false,
+  "physicsLinearDamping":0.1,
+  "physicsObject":false,
+  "physicsRestitution":0.1,
+  "physicsSensor":false,
+  "physicsShape":1,
+  "physicsShapePoints":[],
+  "physicsStartAwake":true,
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"sprite","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_plataform_AG","path":"sprites/spr_plataform_AG/spr_plataform_AG.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_plataform_AG","varType":5,},
+  ],
+  "resourceType":"GMObject",
+  "resourceVersion":"2.0",
+  "solid":false,
+  "spriteId":{
+    "name":"spr_plataform_AP",
+    "path":"sprites/spr_plataform_AP/spr_plataform_AP.yy",
+  },
+  "spriteMaskId":null,
+  "visible":true,
+}

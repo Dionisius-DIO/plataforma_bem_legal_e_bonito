@@ -1,0 +1,25 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"ps_pegar_chave",
+  "backdropHeight":16,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"C:\\Users\\diana\\OneDrive\\Área de Trabalho\\Plataforma bonitinho\\itens\\chave.gif",
+  "backdropWidth":16,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"GM_Warp_Center","additiveBlend":true,"directionIncrease":1.0,"directionMax":352.0,"directionMin":0.0,"directionWiggle":1.0,"distribution":0,"editorColour":16777215,"editorDrawShape":true,"emitCount":30,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":1,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":1661812927,"GMPresetName":"","gravityDirection":275.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":30.0,"lifetimeMin":20.0,"linkedEmitter":null,"locked":false,"midColour":2957817087,"mode":1,"name":"GM_Warp_Center","orientationIncrease":5.0,"orientationMax":0.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":5.0,"regionH":15.21879,"regionW":15.515152,"regionX":0.0,"regionY":0.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":5.0,"scaleY":5.0,"shape":0,"sizeIncrease":0.0,"sizeMax":0.1,"sizeMin":0.1,"sizeWiggle":0.0,"spawnOnDeathCount":0,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":0,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.01,"speedMax":1.0,"speedMin":1.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":{"name":"spr_particulas_chave","path":"sprites/spr_particulas_chave/spr_particulas_chave.yy",},"spriteRandom":false,"spriteStretch":true,"startColour":4294967295,"texture":-1,},
+  ],
+  "name":"ps_pegar_chave",
+  "parent":{
+    "name":"Particle Systems",
+    "path":"folders/Particle Systems.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":true,
+  "xorigin":1,
+  "yorigin":-6,
+}
