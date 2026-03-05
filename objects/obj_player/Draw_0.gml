@@ -6,7 +6,7 @@ draw_sprite_ext(sprite_index, image_index, x, y, xscale * dir, yscale, image_ang
 //desenhando brilho.
 desenha_efeito();
 
-//draw_text(x, y, forca);
+//draw_text(x, y, bufferJ_timer_atual);
 
 //mostrando a mascara de colisão.
 //draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,true);

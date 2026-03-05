@@ -1,60 +1,75 @@
 #region variáveis
 //variável da velocidade horizontal.
-hsp            = 0;
+hsp                 = 0;
 
 //variável da velocidade horizontal MÁXIMA.
-max_hsp        = 1;
+max_hsp             = 1;
 
 //variável da velocidade vertical.
-vsp            = 0;
+vsp                  = 0;
 
 //variável da velocidade vertical MÁXIMA.
-max_vsp        = 3.7;
+max_vsp             = 3.7;
+
+//variável do corner correction.
+corner_pixels       = 8;
 
 //váriavel da gravidade.
-grav           = 0.2;
+grav                = 0.2;
 
 //variável de gravidade.
-chao           = false;
+chao                = false;
 
 //variável de onde virar morcego.
-voa            = false;
+voa                 = false;
 
-morcegando     = layer_tilemap_get_id("morcego");           
-
-//criando colisão com o tileset.
-var _tile      = layer_tilemap_get_id("chao");
+morcegando          = layer_tilemap_get_id("morcego");           
 
 //criando colisão com o tileset.
-var _tile_1     = layer_tilemap_get_id("chao_1");
+var _tile           = layer_tilemap_get_id("chao");
+
+//criando colisão com o tileset.
+var _tile_1         = layer_tilemap_get_id("chao_1");
 
 //criando a variável dos colisores com array.
-colisores = [obj_wall, obj_wall_one_way, _tile, _tile_1];
+colisores           = [obj_wall, obj_wall_one_way, _tile, _tile_1];
 
 //variáveis dos inputs;
-left           = false;
-right          = false;
-jump           = false; 
-morcedificar   = false;
+left                = false;
+right               = false;
+jump                = false; 
+morcedificar        = false;
 
 //variável da view.
-view_player    = noone;
+view_player         = noone;
 
 
 //variável de estado.
-estado         = noone;
+estado              = noone;
 
 //variável da direção.
-dir            = 1; 
+dir                 = 1; 
 
 //variável de power up.
-morcego        = false;
+morcego             = false;
 
 //variável das chaves.
-chaves         = 0;
+chaves              = 0;
 
 //variável da força da queda.
-forca          = 0;
+forca               = 0;
+
+//váriavel do timer do coyote.
+coyoteJ_timer       = game_get_speed(gamespeed_fps) * .1;
+
+//váriavel do coyote jump atual.
+coyoteJ_timer_atual = coyoteJ_timer;
+
+//váriavel do buffer do pulo.
+bufferJ_timer       = game_get_speed(gamespeed_fps) * .1;
+
+//váriavel atual do buffer do pulo.
+bufferJ_timer_atual = 0;
 
 //variável de squash.
 iniciar_squash();
@@ -77,6 +92,7 @@ input = function()
     
     //botão de pulo.
     jump         = keyboard_check_pressed(vk_space);
+    jump_r       = keyboard_check_released(vk_space);
     
     //botão de virar morcego.
     morcedificar = keyboard_check_pressed(ord("E")) or keyboard_check_pressed(vk_shift);
@@ -125,10 +141,13 @@ control = function()
         vsp = 0;
         
         //se eu pular,
-        if(jump)
+        if(jump || bufferJ_timer_atual)
         {
             //eu subo! 
             vsp += -max_vsp; // minha velocidade vertical é igual a velocidade vertical máxima.
+            
+            ///zerando o buffer do pulo.
+            bufferJ_timer_atual = 0;
         }
         
         
@@ -223,6 +242,45 @@ nao_entrar = function()
     }
 }
 
+//método de coyote jump.
+coyote_jump = function()
+{
+    //checando se toquei o chão.
+    toco_chao();
+    
+    //se eu não estou tocando o chão.
+    if(!chao)
+    {
+        //diminuio o coyote jump atual
+        coyoteJ_timer_atual--;
+    }
+    else//se não.
+    {
+        //reseto ele.
+        coyoteJ_timer_atual = coyoteJ_timer;
+    }
+}
+
+//método do buffer do pulo.
+buffer_pulo = function()
+{
+    //checando o chão.
+    toco_chao();
+    
+    //inputs.
+    input();
+    
+    //se eu não toquei no chão.
+    if(!chao)
+    {
+        //se eu apertei o botão de pulo, meu buffer atual é igual ao buffer timer.
+        if(jump) bufferJ_timer_atual = bufferJ_timer;
+            
+        //diminuo o buffer timer atual.
+        bufferJ_timer_atual--;
+    }
+}
+
 #endregion
 
 #region Debugs
@@ -309,7 +367,7 @@ troca_sprite = function(_sprite = spr_bg_teste)
 estado_idle = function()
 {
     //zerando as velocidades.
-    vsp = 0;
+    if(bufferJ_timer_atual == 0) vsp = 0;
     hsp = 0;
     
     //usando método de controle.
@@ -326,7 +384,7 @@ estado_idle = function()
     }
     
     //se eu pulei,
-    if(jump)
+    if(jump || bufferJ_timer_atual)
     { 
           
         //mudo para o estado de pulo.
@@ -412,11 +470,87 @@ estado_jump = function()
     //usando método de controle.
     control();
     
+    //coyote jump.
+    if(coyoteJ_timer_atual && jump)
+    {
+        //subo.
+        vsp -= max_vsp;
+        
+        //crio particulas.
+        instance_create_depth(x, y, depth - 1, obj_particula_pulo);
+        
+         //colocando efeito de squash.
+        squash(.5, 1.4);
+        
+          //toco som de pulo.
+        play(snt_pulo, 1, false);
+        
+    }
+    
+    //fazendo player parar ao tocar no teto.
+    var _level          = layer_tilemap_get_id("chao");
+    var _level1         = layer_tilemap_get_id("chao_1");
+    var _colisores      = [obj_wall, _level, _level1]
+    
+    //se eu tocar no teto.
+    if(place_meeting(x, y + sin(vsp), _colisores))
+    {
+        //variável de controle para parar de subir.
+        var _parar = true;
+        
+        //se a velocidade menor ou igual a 0;
+        if(vsp < 0)
+        {
+            //se eu cheguei no limite de pixeis
+            for(var i = 0; i < corner_pixels; i++;)
+            {
+                //eu continuo pulando//
+                var _corner = !place_meeting(x + i, y + vsp, _colisores)
+                
+                //se eu bati no canto do teto.
+                if(_corner)
+                {
+                   //pulo alguns pixels pro lado;
+                   x += i;
+                
+                  //continuo subindo.
+                   _parar = false;
+                   
+                   //paro a repetição; 
+                   break;
+                
+                }
+                
+                //corner pra esquerda.
+                for(var _i = 0; _i < corner_pixels; _i++;)
+                {
+                    var _corner2 = !place_meeting(x - _i, y + vsp, _colisores)
+                    
+                    if(_corner2)
+                    {
+                        x -= i;
+                        
+                        _parar = false;
+                        
+                        break;
+                    }
+                }
+             
+                
+            }
+        }
+        
+        //se eu toquei no teto, eu paro de subir.
+        if(_parar = true) vsp = 0; 
+    }
+    
+    
     //se minha velocidade vertical for menor que 0
     if(vsp < 0)
     {
         //estou pulando.
         troca_sprite(spr_player_jump_up)
+        
         
         //checando se o valor está dentro do array.
         if(array_contains(colisores, obj_wall_one_way))
@@ -427,6 +561,14 @@ estado_jump = function()
             //deletando valor do array.
             array_delete(colisores, _ind, 1);
         }
+        
+        //controle do pulo.
+        if(jump_r)
+        {
+            vsp *= .2;
+        }
+        
+        
     }
     else//se não,
     {
@@ -447,12 +589,15 @@ estado_jump = function()
             }
         }
         
+        
         //se minha animação acabou,
         if(troca_estado())
         {
             //fica apenas o ultimp frame.
             image_index = 2;
         }
+        
+    
     }
     
     //se eu toquei o chão,

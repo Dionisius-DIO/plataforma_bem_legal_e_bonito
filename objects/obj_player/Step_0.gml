@@ -19,6 +19,12 @@ re_squash();
 //tira o brilho.
 retorna_brilho();
 
+//ativando o coyote jump.
+coyote_jump(); 
+
+//ativando o buffer do pulo.
+buffer_pulo();
+
 //resetando a room.
 var _reset = keyboard_check_pressed(ord("R"));
 
