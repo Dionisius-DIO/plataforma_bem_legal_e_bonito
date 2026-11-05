@@ -1,5 +1,5 @@
 {
-  "$GMWindowsOptions":"v1",
+  "$GMWindowsOptions":"v2",
   "%Name":"Windows",
   "ConfigValues":{
     "debug_mode":{
@@ -7,8 +7,8 @@
       "option_windows_icon":"icons/icon.ico",
     },
     "normal_mode":{
-      "option_windows_icon":"icons/icon.ico",
       "option_windows_display_name":"Goindown the Cave",
+      "option_windows_icon":"icons/icon.ico",
     },
   },
   "name":"Windows",
@@ -39,6 +39,7 @@
   "option_windows_start_fullscreen":false,
   "option_windows_steam_use_alternative_launcher":false,
   "option_windows_texture_page":"2048x2048",
+  "option_windows_use_raw_mouse":false,
   "option_windows_use_splash":false,
   "option_windows_version":"1.0.0.0",
   "option_windows_vsync":false,

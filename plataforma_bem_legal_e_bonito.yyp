@@ -89,7 +89,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"plataforma_bem_legal_e_bonito",
   "resources":[
@@ -117,6 +117,7 @@
     {"id":{"name":"obj_plataform_C","path":"objects/obj_plataform_C/obj_plataform_C.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_power_up","path":"objects/obj_power_up/obj_power_up.yy",},},
+    {"id":{"name":"obj_sensor","path":"objects/obj_sensor/obj_sensor.yy",},},
     {"id":{"name":"obj_tocha_brilho","path":"objects/obj_tocha_brilho/obj_tocha_brilho.yy",},},
     {"id":{"name":"obj_transicao","path":"objects/obj_transicao/obj_transicao.yy",},},
     {"id":{"name":"obj_tremer_tela","path":"objects/obj_tremer_tela/obj_tremer_tela.yy",},},
@@ -267,6 +268,7 @@
     {"id":{"name":"scribble_whitelist_sound","path":"scripts/scribble_whitelist_sound/scribble_whitelist_sound.yy",},},
     {"id":{"name":"scribble_whitelist_sprite","path":"scripts/scribble_whitelist_sprite/scribble_whitelist_sprite.yy",},},
     {"id":{"name":"scribble","path":"scripts/scribble/scribble.yy",},},
+    {"id":{"name":"spr_globais","path":"scripts/spr_globais/spr_globais.yy",},},
     {"id":{"name":"spr_utilidades","path":"scripts/spr_utilidades/spr_utilidades.yy",},},
     {"id":{"name":"string_height_scribble_ext","path":"scripts/string_height_scribble_ext/string_height_scribble_ext.yy",},},
     {"id":{"name":"string_height_scribble","path":"scripts/string_height_scribble/string_height_scribble.yy",},},
@@ -357,6 +359,7 @@
     {"id":{"name":"spr_portao","path":"sprites/spr_portao/spr_portao.yy",},},
     {"id":{"name":"spr_power_up","path":"sprites/spr_power_up/spr_power_up.yy",},},
     {"id":{"name":"spr_rect","path":"sprites/spr_rect/spr_rect.yy",},},
+    {"id":{"name":"spr_sensor","path":"sprites/spr_sensor/spr_sensor.yy",},},
     {"id":{"name":"spr_teleporte","path":"sprites/spr_teleporte/spr_teleporte.yy",},},
     {"id":{"name":"spr_tileset_cave","path":"sprites/spr_tileset_cave/spr_tileset_cave.yy",},},
     {"id":{"name":"spr_tileset_plant_cave","path":"sprites/spr_tileset_plant_cave/spr_tileset_plant_cave.yy",},},

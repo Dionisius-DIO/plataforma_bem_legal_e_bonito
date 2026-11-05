@@ -1,13 +1,19 @@
-//me destruo.
-instance_destroy();
+////me destruo.
+//instance_destroy();
+
+//sigo o player.
+seguir_player = true;
+
+//coloco o player como alvo.
+alvo_player   = other.id;
 
 //ganho uma chave.
 other.pega_chave();
 
-//criando particula de pegar.
-var _ps = part_system_create(ps_pegar_chave);
-
-part_system_position(_ps, x, y);
+////criando particula de pegar.
+//var _ps = part_system_create(ps_pegar_chave);
+//
+//part_system_position(_ps, x, y);
 
 //tocando som.
 play(snt_chave, 2, false);

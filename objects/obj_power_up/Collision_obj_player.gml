@@ -8,6 +8,7 @@ if(alvo == noone)
     alvo = other.id;
     
     //consigo virar morcegoum.
+    global.morcego_p = true;
     other.morcego = true;
     
     //destruo as particulas.

@@ -51,7 +51,7 @@ estado              = noone;
 dir                 = 1; 
 
 //variável de power up.
-morcego             = false;
+morcego             = global.morcego_p;
 
 //variável das chaves.
 chaves              = 0;
@@ -80,7 +80,7 @@ inicia_brilho();
 
 #endregion
 
-
+ 
 #region Métodos.
 
 //método dos inputs.
